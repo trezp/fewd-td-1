@@ -15,7 +15,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #379985;
+  color: #24A7AD;
 }
 a:hover {
   color: #6633ff;
@@ -52,7 +52,7 @@ a:hover {
   transition: all .5s;
 }
 .nav a:hover {
-  color: white
+  color: #F62459;
 }
 
 header {
@@ -73,7 +73,7 @@ header .profile-image {
   border: 3px solid #379985;
   transition: all .5s;
 }
-header .profile-image:hover {
+header .profile-image: {
   transform: scale(1.5);
   transition: all 2s;
 }
@@ -82,9 +82,6 @@ header.resume {
   background-size: 100%;
 }
 
-header.contact {
-  background: url('images/titan.jpg') no-repeat top center ;
-}
 .tag {
   background-color: #efefef;
   color: black;
@@ -95,7 +92,7 @@ header.contact {
 }
 .location {
   background-color: #222;
-  color: yellow;
+  color: #F62459;
 }
 .card {
   margin: 30px;
@@ -110,25 +107,59 @@ header.contact {
 }
 
 .card.resume {
-  border-color: royalblue;
+  max-width: 750px;
 }
-.card:hover {
+.card: {
   border-color: #379985;
 }
-
 .card.resume:hover {
   border-color: red;
+}
+
+.card-img {
+  position: relative;
+}
+
+.unicorn {
+  filter: grayscale(100%);
+  width: 150px;
+}
+.hero-div {
+  position: relative;
+}
+.hero-div ul {
+  display: inline;
+  float: left;
+  width: 50%;
+}
+.hero {
+  width: 25%;
+  display: inline-block;
+  margin-left: 30px;
+  -ms-transform: rotate(125deg); /* IE 9 */
+  -webkit-transform: rotate(125deg); /* Chrome, Safari, Opera */
+  transform: rotate(125deg);
+}
+
+.img-container span {
+  font-size: 180px;
+  color: red;
+  position: absolute;
+  transform: rotate(40deg);
+  top: 0;
+  left: 43%;
 }
 
 .card h2 {
   text-align: center;
 }
-.card img {
+.card.index img {
   width: 50%;
   display: block;
   margin: auto;
 }
-ul.skills {
+
+.skills {
   padding: 0;
   text-align: center;
 }
@@ -147,7 +178,7 @@ ul.skills {
 }
 
 .skills li:nth-child(3n+1){
-  background: orange;
+  background: #F62459;
 }
 
 footer {
@@ -214,7 +245,7 @@ a.social:hover {
   }
 
   header.resume {
-    min-height: 200px;
+    min-height: 400px;
   }
 
   .nav {
