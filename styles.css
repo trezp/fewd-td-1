@@ -73,7 +73,7 @@ header .profile-image {
   border: 3px solid #379985;
   transition: all .5s;
 }
-header .profile-image: {
+header .profile-image:hover {
   transform: scale(1.5);
   transition: all 2s;
 }
@@ -109,7 +109,20 @@ header.resume {
 .card.resume {
   max-width: 750px;
 }
-.card: {
+
+.resume div {
+  position: relative;
+}
+
+.resume div span {
+  position: absolute;
+  font-size: 11em;
+  top: 0;
+  left: 40%;
+  transform: rotate(30deg);
+  color: red;
+}
+.card:hover {
   border-color: #379985;
 }
 .card.resume:hover {
@@ -120,7 +133,7 @@ header.resume {
   position: relative;
 }
 
-.unicorn {
+.card .unicorn {
   filter: grayscale(100%);
   width: 150px;
 }
@@ -132,7 +145,8 @@ header.resume {
   float: left;
   width: 50%;
 }
-.hero {
+
+.resume .hero {
   width: 25%;
   display: inline-block;
   margin-left: 30px;
@@ -141,19 +155,17 @@ header.resume {
   transform: rotate(125deg);
 }
 
-.img-container span {
-  font-size: 180px;
-  color: red;
+.card .hero-div span {
   position: absolute;
-  transform: rotate(40deg);
-  top: 0;
-  left: 43%;
+  top: 8%;
+  left: 56%;
+  font-size: 12em;
 }
 
 .card h2 {
   text-align: center;
 }
-.card.index img {
+.card img {
   width: 50%;
   display: block;
   margin: auto;
